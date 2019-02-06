@@ -1,0 +1,83 @@
+.footer_blog{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: -25px;
+  width:100%;
+  height:160px;
+  align-items: center;
+}
+.footer_up-text{
+  font:14px "Myriad Pro Semibold";
+}
+.footer_a{
+  transition:font-size 500ms, color 500ms;
+  &:hover{
+    color:$red;
+    text-decoration: none;
+    font-size: 16px;
+  }
+}
+.blog-ration{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:250px;
+}
+.blog-rating-stars{
+  color:$red;
+  letter-spacing: 5px;
+  font-size: 19px;
+  transition: color 500ms;
+  .rose{
+    color:$rose;
+  }
+  i.rose-half{
+    position:relative;
+    &:after{
+    content:'\f089';
+    position:absolute;
+      right:-25%;
+    transform: scaleX(-1);
+    color:$rose;
+  }
+  }
+  &:hover{
+    color:violet;
+  }
+}
+//стилі іконок
+.share_social{
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  width:480px;
+  margin-right:15px;
+}
+.social__block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social{
+  width:35px;
+  height:35px;
+  border-radius: 50%;
+  font-weight: bold;
+  text-align: center;
+  box-shadow:2px 3px 10px 0.4px rgba(0,0,0,0.08);
+  margin-left:15px;
+  padding-top: 10px;
+  transition: color 250ms, box-shadow 500ms;
+  &:hover{
+    color:$red;
+    box-shadow: 2px 3px 10px 0.4px rgba(0,0,0,0.3);
+  }
+}
+.social__block{
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+}

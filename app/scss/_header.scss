@@ -1,0 +1,125 @@
+.header {
+  height: $header_height;
+  position: relative;
+  color: white;
+  background: url('../img/header_bg.png') no-repeat top center;
+  background-size: cover;
+  a{
+    color:$white_transparent85;
+    &:hover{
+      color:white;
+    }
+  }
+}
+
+.header-shadow {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: $header_height;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 0;
+}
+
+.header_content {
+  height: $header_height;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header__h2 {
+  color: white;
+  font: 22px "MariadPro Semibold";
+  border: none;
+  border-left: 1px solid white;
+  padding: 0 0 0 46px;
+}
+
+.header__blog-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 64px;
+  align-items: flex-end;
+}
+
+.blog_info {
+  display: flex;
+  justify-content: space-between;
+  color: $white_transparent85;
+  align-items: center;
+}
+
+.blog_date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 110px;
+  font-size: 60px;
+  color: $white_transparent33;
+}
+
+.blog_date-data {
+  font: 60px 'MariadPro Semibold';
+
+  line-height: 1em;
+}
+
+.blog_date-month-year {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.blog-stars {
+  letter-spacing: 10px;
+}
+
+.star-grey {
+  color: $white_transparent33;
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  background: $white_transparent85;
+  border-radius: 50%;
+  margin-right: 37px;
+
+}
+
+.blog-reading-time {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    opacity: 0.85;
+    background: url('../img/sprite/spritesheet.png') no-repeat  -5px -5px;
+    width: 10px;
+    height: 10px;
+    left: -20px;
+    top: 25%;
+    transform: translateY(-50%);
+    overflow: hidden;
+  }
+}
+
+.blog-views {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    opacity: 0.85;
+    top: 25%;
+    transform: translateY(-50%);
+    background: url('../img/sprite/spritesheet.png') no-repeat  -5px -25px;
+    left: -20px;
+    width: 10px;
+    height: 8px;
+    overflow: hidden;
+  }
+}

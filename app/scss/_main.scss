@@ -1,0 +1,58 @@
+.main{
+  padding-top: 80px;
+  max-width:780px;
+  overflow:hidden;
+}
+.main-text{
+  font:16px 'MyriadPro Regular';
+  margin-bottom: 25px;
+  border:1px solid transparent;
+}
+.main_h3{
+  margin:40px 0 60px 20px;
+  font:25px "MyriadPro Bold";
+  position: relative;
+  &:before{
+    content: '';
+    height:100%;
+    border-left:1px solid $red;
+    position:absolute;
+    left:-20px;
+  }
+}
+.main_h4{
+  font:20px 'MyriadPro Bold';
+  margin-bottom:25px;
+}
+.main__photo{
+  width:100%;
+  max-height: 270px;
+  overflow-y: hidden;
+  position: relative;
+  margin:20px 0 50px;
+  -webkit-margin-collapse: separate;
+  &-sizing{
+    max-height:none;
+    height:100%;
+  }
+
+img{
+  width:100%;
+  height:auto;
+  position: relative;
+  top:-30px;
+  &.main__photo-sizing-img{
+    top:0;
+  }
+}
+}
+.red-text{
+  color:$red;
+}
+.bold-text{
+  font-family: "MyriadPro Bold", sans-serif;
+}
+.text-20px{
+  font-size: 20px;
+}
+@import "ul";

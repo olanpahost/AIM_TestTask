@@ -1,0 +1,55 @@
+.footer_below{
+  position:relative;
+  background: url("../img/img_company.png") no-repeat top right;
+  background-size: contain;
+  height:$footer_height;
+  width:100%;
+}
+.footer_content{
+  width:100%;
+  height:$footer_height;
+  position: relative;
+  top:0;
+  left:0;
+  background-image: linear-gradient(to right, $violet, $purple-tr);
+}
+.button_footer{
+  width:200px;
+  height:50px;
+  font:18px "MariadPro Light";
+  color:white;
+  background: transparent;
+  border:1px solid white;
+  position: relative;
+  cursor: pointer;
+  &:after{//arrow
+    content: '\2192';
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right:20px;
+  }
+  transition: background-color 250ms;
+  &:hover{
+  background: rgba(172, 22, 44,0.5);
+  }
+}
+.footer_h2{
+  color: white;
+  min-width:550px;
+  font: 2rem "MariadPro Semibold";
+  padding:0;
+  text-transform: uppercase;
+}
+.footer_text{
+  font:22px "MariadPro Light";
+  color:white;
+  text-transform: uppercase;
+  margin:30px 0 40px;
+}
+.footer_content-center{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}

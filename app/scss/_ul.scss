@@ -1,0 +1,46 @@
+.main_ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  font-size: 16px;
+  font-family: "MariadPro Regular", sans-serif;
+  margin:30px 0;
+}
+
+.ul-square {
+  -webkit-margin-collapse: separate;
+  li {
+    margin: 10px 0 10px 34px;
+    position: relative;
+    &:before {
+      content: '';
+      background: $red;
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      top: 0.25em;
+      left: -26px;
+    }
+  }
+}
+
+.ul-dots li {
+  margin: 10px 0 10px 68px;
+  position: relative;
+  letter-spacing: -0.3px;
+  &:before {
+    content: '\2022';
+    color: $red;
+    line-height: 0.5;
+    text-align: center;
+    transform: translateY(50%);
+    width: 11px;
+    height: 11px;
+    border: 2px solid $red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -26px;
+  }
+}

@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title AIM
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
+        link(rel="stylesheet" href="libs/bootstrap/bootstrap.min.css")
+        link(rel="stylesheet" href="css/style.css")
+    body
+        .wrapper
+            include header
+            .container
+                .row.justify-content-between
+                    .col-12.col-lg-9.p-0
+                        include main
+                    .col-12.col-lg-3.p-0
+                        include aside
+                .row.footer_over
+                    include footer_over
+                .row
+                    .footer_below.col-12.p-0
+                        include footer_below
+

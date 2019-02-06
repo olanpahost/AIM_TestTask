@@ -1,0 +1,18 @@
+.wrapper {
+  width: 100%;
+  font: 12px "MariadPro Light";
+}
+
+@import 'var';
+a:hover {
+  color: $red;
+}
+@import 'reset';
+@import 'fonts';
+@import 'header';
+@import 'main';
+@import 'aside';
+@import 'footer_up';
+@import 'footer_below';
+@import 'media';
+
