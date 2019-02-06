@@ -11,7 +11,8 @@ var gulp        = require('gulp'),
 
 gulp.task('scssToCss',function () {
     return gulp.src("app/scss/*.scss")
-        .pipe(sass())
+        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(autoprefixer({browsers: ['last 2 versions', '> 1%', 'ie 8', 'ie 7']}, { cascade: true }))
         .pipe(gulp.dest("app/css"))
         .pipe(browserSync.reload({stream: true})) //оновлення сторінки при зміні scss
 });

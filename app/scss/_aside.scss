@@ -147,8 +147,9 @@ a:hover{
   span{
     position: relative;
   }
-  span:after{//arrow
-    content: '\2192';
+  //arrow
+  span:after{
+    content: "\2192";
     position:absolute;
     top:50%;
     transform: translateY(-50%);
