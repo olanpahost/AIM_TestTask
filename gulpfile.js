@@ -36,7 +36,7 @@ gulp.task('watch', ['browser-sync', 'scssToCss', 'pugToHTML'],function(){
     gulp.watch('app/scss/*.+(scss|sass)',['scssToCss']);
     gulp.watch('app/template/*.pug',['pugToHTML']);
     gulp.watch('app/**/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
-    gulp.watch('app/js/**/*.js', browserSync.reload); // Наблюдение за JS файлами в папке js
+    // gulp.watch('app/js/**/*.js', browserSync.reload); // Наблюдение за JS файлами в папке js
 });
 //збірка проекту
 //clear dist
@@ -66,11 +66,11 @@ gulp.task('build', ['scssToCss', 'pugToHTML', 'clean', 'img'], function() {
     var libs = gulp.src('app/libs/**/*') // бібліотеки
         .pipe(gulp.dest('dist/libs'));
 
-    var buildJs = gulp.src('app/js/**/*') // скрипти
-        .pipe(gulp.dest('dist/js'));
-
-    var doc = gulp.src('app/doc/*') // скрипти
-        .pipe(gulp.dest('dist/doc'))
+    // var buildJs = gulp.src('app/js/**/*') // скрипти
+    //     .pipe(gulp.dest('dist/js'));
+    //
+    // var doc = gulp.src('app/doc/*') // скрипти
+    //     .pipe(gulp.dest('dist/doc'))
 
     var buildHtml = gulp.src('app/**/*.html') // HTML
         .pipe(gulp.dest('dist'));
