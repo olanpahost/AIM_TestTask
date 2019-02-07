@@ -89,8 +89,10 @@ a:hover{
   text-align: center;
   margin-right: 10px;
   border-radius:3px;
-  img{
-    left:-20%;
+  position:relative;
+  img:not(.img){
+    position:absolute;
+    left:-25%;
   }
 
 }
