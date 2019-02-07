@@ -54,7 +54,7 @@ a:hover{
 
 }
 .brick_item{
-  font:16px "Myriad Pro Regular";
+  font:16px "MyriadPro Regular";
   display: inline-block;
   height:100%;
   min-height:30px;
@@ -115,7 +115,8 @@ a:hover{
 }
 .picture{
   position: relative;
-  height:100%;
+  height:48%;
+  z-index:0;
   img{
     width:100%;
     height:auto;
@@ -125,8 +126,8 @@ a:hover{
   position: absolute;
   height:100%;
   width:100%;
-  background-image: linear-gradient(to right, $violet, $purple-tr);
-  z-index: 10;
+  background-image: linear-gradient(to right, $violet-tr, $purple-tr2);
+  z-index: 0;
 }
 .picture_block_h3{
   font:18px "MyriadPro Bold";
@@ -134,7 +135,7 @@ a:hover{
 }
 .aside_a{
   color:#cd2638;
-  font:16px "Myriad Pro Semibold";
+  font:16px "MariadPro Semibold";
   margin:-35px auto 35px;
   padding:15px;
   width:75%;
