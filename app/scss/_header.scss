@@ -1,9 +1,11 @@
 .header {
   height: $header_height;
   position: relative;
+  width:100%;
   color: white;
   background: url('../img/header_bg.png') no-repeat top center;
   background-size: cover;
+  overflow: hidden;
   a{
     color:$white_transparent85;
     &:hover{
